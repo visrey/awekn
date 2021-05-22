@@ -1,0 +1,61 @@
+<div class="headerRoot">
+    <div class="headerWrapped">
+        <div class="iconWrapper">
+            <fa-icon [icon]="faMicrophone" size="lg"></fa-icon>
+        </div>
+        <div class="iconWrapper">
+            <fa-icon [icon]="faUser" size="lg"></fa-icon>
+        </div>
+        <div class="iconWrapper">
+            <fa-icon [icon]="faBell" size="lg"></fa-icon>
+        </div>
+        <div class="iconWrapper">
+            <a routerLink="/settings" routerLinkActive="active" 
+            [routerLinkActiveOptions]="{exact:true}">
+                <fa-icon [icon]="faCog" size="lg"></fa-icon>
+            </a>
+        </div>
+        <div class="dateDay">
+            <div class="headerTime">{{currentDate | date:'HH:mm'}}</div>
+            <div class="dayMonthWrap">
+                <div class="headerMonth">{{currentDate | date:'MMMM dd'}}</div>
+                <div class="headerDay">{{currentDate | date:'EEEE'}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobileRoot">
+    <div class="headerWrapped">
+        <!-- <div class="logoWrapper">
+            <div class="logoInnerWrapper">
+                <a href="https://awekn.com" class="aweknRef">
+                    <img src="/assets/logo.png" alt="awekn-logo" width="51px" height="44px"/> 
+                </a>
+            </div>
+        </div> -->
+        <div class="iconMWrapper">
+            <a routerLink="/" routerLinkActive="active" 
+            [routerLinkActiveOptions]="{exact:true}">
+            <fa-icon [icon]="faHome" size="lg"></fa-icon>
+            </a>
+        </div>
+        <div class="iconMWrapper">
+            <a routerLink="/videos" routerLinkActive="active" 
+            [routerLinkActiveOptions]="{exact:true}">
+            <fa-icon [icon]="faFilm" size="lg"></fa-icon>
+            </a>
+        </div>
+        <div class="iconMWrapper">
+            <a routerLink="/categories" routerLinkActive="active" 
+            [routerLinkActiveOptions]="{exact:true}">
+            <fa-icon [icon]="faThList" size="lg"></fa-icon>
+            </a>
+        </div>
+        <div class="iconMWrapper">
+            <a routerLink="/settings" routerLinkActive="active" 
+            [routerLinkActiveOptions]="{exact:true}">
+            <fa-icon [icon]="faCog" size="lg"></fa-icon>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div class="sidebarContainer">
+    <div class="logoWrapper">
+        <h2>
+            <a href="https://awekn.com" class="aweknRef">
+                AWEKN
+                <img src="assets/logo.png" alt="awekn-logo" width="51px" height="44px" />
+            </a>
+        </h2>
+    </div>
+    <div class="mainMenu">
+        <ul class="mainMenuList">
+            <li><a routerLink="/" routerLinkActive="active" 
+                [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+            <li><a routerLink="/videos" routerLinkActive="active" 
+                [routerLinkActiveOptions]="{exact:true}">Videos</a></li>
+            <li><a routerLink="/categories" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}">Categories</a></li>
+            <li><a routerLink="/articles" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}">Articles</a></li>
+            <li><a routerLink="/utilities" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}">Utilites</a></li>
+        </ul>
+    </div>
+    <div class="subMenu">
+        <h3>Popular Categories</h3>
+        <ul class="mainMenuList">
+            <li><a [routerLink]="['/videos/','discover']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}">Discover</a></li>
+            <li><a [routerLink]="['/videos/','food']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}">Food</a></li>
+            <li><a [routerLink]="['/videos/','people']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}">People</a></li>
+            <li><a [routerLink]="['/videos/','life']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}">Life</a></li>
+        </ul>
+    </div>
+</div>

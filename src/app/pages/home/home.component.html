@@ -1,0 +1,20 @@
+<ng-template #videoPlayer></ng-template>
+<div class="home">
+    <div class="mobileHeader">
+        <h2 class="text-center">Awekn <img src="/assets/logo.png" alt="awekn-logo" width="30px" height="26px"/></h2>
+    </div>
+    <h4 class="titles">New Videos <span class="vlink"><a routerLink="/videos" routerLinkActive="router-link-active">View More&nbsp;<fa-icon [icon]="faAngleDoubleRight"></fa-icon></a></span></h4>
+    <app-videocard-container [dataContainer]="videos | slice:0:20" [routeData]="'/videos'"></app-videocard-container>
+    <br>
+    <h4 class="titles">Video Categories <span class="vlink"><a routerLink="/categories" routerLinkActive="router-link-active">View More&nbsp;<fa-icon [icon]="faAngleDoubleRight"></fa-icon></a></span></h4>
+    <app-cat-card-container [tags]="videotags" catType="videos"></app-cat-card-container>
+    <br>
+    <h4 class="titles">Discover <span class="vlink"><a routerLink="/videos/discover" routerLinkActive="router-link-active">View More&nbsp;<fa-icon [icon]="faAngleDoubleRight"></fa-icon></a></span></h4>
+    <app-videocard-container [dataContainer]="discover | slice:0:20" [routeData]="'/videos/discover'"></app-videocard-container>
+    <br>
+    <h4 class="titles">Food <span class="vlink"><a routerLink="/videos/food" routerLinkActive="router-link-active">View More&nbsp;<fa-icon [icon]="faAngleDoubleRight"></fa-icon></a></span></h4>
+    <app-videocard-container [dataContainer]="food | slice:0:20" [routeData]="'/videos/food'"></app-videocard-container>
+    <br>
+    <h4 class="titles">People <span class="vlink"><a routerLink="/videos/people" routerLinkActive="router-link-active">View More&nbsp;<fa-icon [icon]="faAngleDoubleRight"></fa-icon></a></span></h4>
+    <app-videocard-container [dataContainer]="people | slice:0:20" [routeData]="'/videos/people'"></app-videocard-container>
+</div>

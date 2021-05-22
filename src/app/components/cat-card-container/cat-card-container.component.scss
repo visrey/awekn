@@ -1,0 +1,41 @@
+.outwrap {
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+    transform: translate3d(0, 0, 0);
+}
+
+.inwrap {
+    display: flex;
+    padding-top: 25px;
+    // padding-left: 24px;
+    padding-bottom: 25px;
+}
+
+.outwrap::-webkit-scrollbar {
+    display: none;
+}
+
+.vallwrap {
+    position: relative;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.vall{
+    color: #bbb;
+}
+
+.vall:hover {
+    color: #ff0081 !important;
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+}
+
+@media (max-width: 575.98px) {
+}

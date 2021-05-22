@@ -1,0 +1,110 @@
+.headerRoot {
+    height: 100%;
+}
+
+.headerWrapped {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    height: 55px;
+    max-height: 55px;
+    div {
+        bottom: 0px;
+    }
+}
+
+.iconWrapper {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    a {
+        color: var(--awekn-fg);
+    }
+}
+
+.iconMWrapper {
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+}
+
+.active {
+    fa-icon {
+        color: var(--awekn-highlight);
+    }
+}
+
+.dateDay {
+    width: 240px;
+    display: inline-block;
+}
+.headerTime {
+    width: 80px;
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 2em;
+}
+.dayMonthWrap {
+    width: 120px;
+    font-size: 1.1em;
+    display: inline-block;
+}
+.mobileRoot {
+    display: none;
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+}
+
+@media (max-width: 575.98px) {
+    .headerRoot {
+        display: none;
+    }
+    .mobileRoot {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background: linear-gradient(180deg,var(--awekn-bg-2), var(--awekn-bg));
+    }
+    .headerWrapped{
+        float:unset;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: auto auto auto auto;
+    }
+    .iconMWrapper {
+        position: relative;
+        margin: 0px;
+        justify-self: center;
+        fa-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--awekn-fg);
+        }
+    }
+    .logoInnerWrapper {
+        background: var(--awekn-bg-3);
+        border-radius: 50%;
+        border: 1px solid var(--awekn-bg-3);
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin: 10px;
+    }
+    .active {
+        fa-icon {
+            color: var(--awekn-highlight);
+        }
+    }
+}

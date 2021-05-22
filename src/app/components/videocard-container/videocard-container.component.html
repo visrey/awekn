@@ -1,0 +1,27 @@
+<div class="row nowrap" *ngIf="dataContainerData !== undefined">
+    <div class="outwrap" #scrollContainer (scroll)="checkScroll(this)">
+        <div class="inwrap">
+            <app-videocard *ngFor="let video of dataContainerData" [video]="video"></app-videocard>
+            <div class="vallwrap">
+                <a [routerLink]="[routerLinkData]" routerLinkActive="router-link-active">
+                    <div class="navBtn viewMore">
+                        <fa-icon [icon]="faAngleDoubleRight" size="lg"></fa-icon>
+                    </div>
+                    <div class="vall">
+                        View More
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="nav-wrapl" *ngIf="showPrev" (click)="scrollPrev(this)">
+        <div class="navBtn">
+            <fa-icon [icon]="faChevronCircleLeft" size="lg"></fa-icon>
+        </div>
+    </div>
+    <div class="nav-wrapr" *ngIf="showNext" (click)="scrollNext(this)">
+        <div class="navBtn">
+            <fa-icon [icon]="faChevronCircleRight" size="lg"></fa-icon>
+        </div>
+    </div> -->
+</div>

@@ -1,0 +1,10 @@
+<div class="cardout" (click)="openVideoPlayer()">
+    <div class="vwrapper" [style.background-image]="'url('+imageURL+')'">
+        <div class="details">
+            <span>
+                <h5>{{title | slice:0:40}}</h5>
+                <fa-icon [icon]="faPlay" size="2x" [styles]="{'stroke': '#FEFEFE', 'color': '#FEFEFE'}"></fa-icon>
+            </span>
+        </div>
+    </div>
+</div>
