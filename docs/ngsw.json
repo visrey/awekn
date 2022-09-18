@@ -1,0 +1,103 @@
+{
+  "configVersion": 1,
+  "timestamp": 1622134353100,
+  "index": "https://awekn.com/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://awekn.com/favicon.ico",
+        "https://awekn.com/index.html",
+        "https://awekn.com/main-es2017.a1f71fcac27946e9595e.js",
+        "https://awekn.com/main-es5.a1f71fcac27946e9595e.js",
+        "https://awekn.com/manifest.webmanifest",
+        "https://awekn.com/polyfills-es2017.3ace81546edd9a7ddc6f.js",
+        "https://awekn.com/polyfills-es5.a0d0974b65514a4c6b2e.js",
+        "https://awekn.com/runtime-es2017.5a96fa6b9759b8ad2aec.js",
+        "https://awekn.com/runtime-es5.5a96fa6b9759b8ad2aec.js",
+        "https://awekn.com/styles.fc43541cd8e558048588.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://awekn.com/assets/color.png",
+        "https://awekn.com/assets/dark.png",
+        "https://awekn.com/assets/data/curatedData.json",
+        "https://awekn.com/assets/icons/favicon.ico",
+        "https://awekn.com/assets/icons/icon-128x128.png",
+        "https://awekn.com/assets/icons/icon-144x144.png",
+        "https://awekn.com/assets/icons/icon-152x152.png",
+        "https://awekn.com/assets/icons/icon-192x192.png",
+        "https://awekn.com/assets/icons/icon-36x36.png",
+        "https://awekn.com/assets/icons/icon-384x384.png",
+        "https://awekn.com/assets/icons/icon-48x48.png",
+        "https://awekn.com/assets/icons/icon-512x512.png",
+        "https://awekn.com/assets/icons/icon-72x72.png",
+        "https://awekn.com/assets/icons/icon-96x96.png",
+        "https://awekn.com/assets/light.png",
+        "https://awekn.com/assets/logo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://awekn.com/assets/color.png": "ef32425ffe42afb15fd383fa2c646d3cc9a19d4c",
+    "https://awekn.com/assets/dark.png": "0934ab1127c5cfd15cdd9e836c44e63007d045ad",
+    "https://awekn.com/assets/data/curatedData.json": "296557959ffa7672f8b1deb7d609f7ce7f2f212d",
+    "https://awekn.com/assets/icons/favicon.ico": "2586b902f8b7577b6306d4d3b76b722076bad6a7",
+    "https://awekn.com/assets/icons/icon-128x128.png": "e111b75be33d65f9426974989d903a0016e6e788",
+    "https://awekn.com/assets/icons/icon-144x144.png": "84fc1bb4a8f4a306a077f4c8739ee002e28ecd75",
+    "https://awekn.com/assets/icons/icon-152x152.png": "84fc1bb4a8f4a306a077f4c8739ee002e28ecd75",
+    "https://awekn.com/assets/icons/icon-192x192.png": "c3aac708bc9b26b2235aa9fcfa5138e24d744b1f",
+    "https://awekn.com/assets/icons/icon-36x36.png": "e0c3231974bb5e82c8887dcbd60cedbfdb17e71e",
+    "https://awekn.com/assets/icons/icon-384x384.png": "c3aac708bc9b26b2235aa9fcfa5138e24d744b1f",
+    "https://awekn.com/assets/icons/icon-48x48.png": "4b235ebb45ea78d8e2737c0d289a342417b9dcf9",
+    "https://awekn.com/assets/icons/icon-512x512.png": "ac4708f9695c583f894d409d1fa9c591540f698e",
+    "https://awekn.com/assets/icons/icon-72x72.png": "74c6aba52762e6f609cb8309aca89517a6f16917",
+    "https://awekn.com/assets/icons/icon-96x96.png": "20fd01a06a1a993d093b7149d22b526b18b9679c",
+    "https://awekn.com/assets/light.png": "760ce93bffa45bb1ff8b7e602af479733ec059e3",
+    "https://awekn.com/assets/logo.png": "ef32425ffe42afb15fd383fa2c646d3cc9a19d4c",
+    "https://awekn.com/favicon.ico": "a7426ae6c647340edd826c42b9071b333e3c6b4d",
+    "https://awekn.com/index.html": "faad4238c72b7340e956345bb774068e661c80fb",
+    "https://awekn.com/main-es2017.a1f71fcac27946e9595e.js": "9bd7c1113d6a3541a720968ceb65ee55b2b6fc44",
+    "https://awekn.com/main-es5.a1f71fcac27946e9595e.js": "2806d3c0ee44dcb221d718508422fb89107eb78b",
+    "https://awekn.com/manifest.webmanifest": "d0b9e1733f0f8e77517e51c00aa34c2bac9f0813",
+    "https://awekn.com/polyfills-es2017.3ace81546edd9a7ddc6f.js": "3a4f14c9be77ab35fffba64f943b5c495ca48aeb",
+    "https://awekn.com/polyfills-es5.a0d0974b65514a4c6b2e.js": "c73d1b854202afcdee3c04b4bcd72ff0923a8442",
+    "https://awekn.com/runtime-es2017.5a96fa6b9759b8ad2aec.js": "f7e2693544e444dd1d6b99189a74224046e126a3",
+    "https://awekn.com/runtime-es5.5a96fa6b9759b8ad2aec.js": "f7e2693544e444dd1d6b99189a74224046e126a3",
+    "https://awekn.com/styles.fc43541cd8e558048588.css": "87db46c83c3df3b579eecb817879d5123e7dab76"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

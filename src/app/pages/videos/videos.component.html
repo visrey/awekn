@@ -1,0 +1,9 @@
+<ng-template #videoPlayer></ng-template>
+<div class="home">
+    <div class="mobileHeader">
+        <h2 class="text-center">Awekn <img src="/assets/logo.png" alt="awekn-logo" width="30px" height="26px"/></h2>
+    </div>
+    <div class="wrap">
+        <app-videocard *ngFor="let video of videos" [video]="video"></app-videocard>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="row nowrap">
+    <div class="outwrap" #scrollContainer>
+        <div class="inwrap">
+            <app-cat-card *ngFor="let tagname of cattags" [ttype]="typeName" [tagname]="tagname"></app-cat-card>
+        </div>
+    </div>
+</div>

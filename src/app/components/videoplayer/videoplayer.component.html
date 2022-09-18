@@ -1,0 +1,12 @@
+<div id="video" class="lightbox" *ngIf="!closeVideo" (click)="closeVideoBox()">
+    <div class="lightbox-container">  
+        <div class="lightbox-content">
+            <button (click)="closeVideoBox()" class="lightbox-close">
+                Close | ✕
+            </button>
+            <div class="video-container">
+                <iframe id="youtube" width="960" height="540" [src]="safeURL" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

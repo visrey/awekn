@@ -1,0 +1,233 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    /* Colors */
+    --awekn-fg: #FEFEFE;
+    --awekn-fg-2: #EEEEEE;
+    --awekn-fg-3: #DDDDDD;
+    --awekn-fg-4: #E5E5E5;
+    --awekn-fg-light: #FFFFFF;
+  
+    --awekn-bg: #222;
+    --awekn-bg-2: #2C2C2C;
+    --awekn-bg-3: #3C3C3C;
+    --awekn-bg-light: #41474D;
+  
+    --primary-default: #491BE0;
+    --primary-dark: #250E70;
+    --primary-light: #491BE0;
+
+    --awekn-links: #aaa;
+    --awekn-hover: #ff0081;
+    --awekn-highlight: #0000FF;
+  
+    --error-default: #ef3e36;
+    --error-dark: #800600;
+    --error-light: #ffcecc;
+
+    --awekn-white: #FEFEFE;
+  
+    /* Shadows */
+    --background-tertiary-shadow: 0 1px 3px 0 rgba(92, 125, 153, 0.5);
+    --awekn-shadow: 1px 1px 10px rgba(0,0,0, 0.40);
+
+    /*Awekn Gradients*/
+    --awekn-bg-gradient: linear-gradient(360deg,#222, #333);
+    --awekn-card-bg: #000428;
+    --awekn-card-bg-gradient: linear-gradient(45deg,#000428, #004e92);
+}
+
+html, body { 
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {    
+    // height: 100%;
+    // margin: 0 !important;
+    // padding: 0 !important;
+    // color: #FEFEFE;
+    // background-color: #1C1C1C;
+    color: var(--awekn-fg);
+    background-color: var(--awekn-bg);
+    background: var(--awekn-bg-gradient);
+    transition: color 0.5s, background 0.5s;
+}
+
+.aweknRootContainer {
+    width: 100vw;
+    height: 100%;
+    display:flex;
+}
+
+.aweknSidebar {
+    height: 100%;
+    min-height: 100vh;
+    width: 20vw;
+    position:absolute;
+    overflow:hidden;
+    background: linear-gradient(360deg,var(--awekn-bg),var(--awekn-bg-2));
+}
+
+.aweknFocusContainer {
+    height: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 80vw;
+    position: absolute;
+    left: 20vw;
+}
+
+.aweknHeader {
+    height: 75px;
+    overflow-y: hidden;
+}
+
+.aweknMainContainer {
+    height: calc(100% - 75px);
+    width: 100%;
+    overflow-y: auto;
+    padding: 0;
+    -webkit-overflow-scrolling: unset;
+}
+.aweknMainContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-wrapr {
+    position: absolute;
+    right: 0;
+    height: 275px;
+}
+
+.nav-wrapl {
+    position: absolute;
+    left: 0;
+    height: 275px;
+}
+
+.text-center {
+    text-align: center;
+    text-shadow: var(--background-tertiary-shadow);
+}
+
+.fs-3em {
+    font-size: 3em;
+}
+
+.mobileHeader{
+    display: none;
+}
+
+.titles {
+    margin-block-start: 1em;
+    margin-block-end: 0.5em;
+}
+.vlink {
+    float: right;
+}
+
+.wrap {
+    width: 100%;
+    display: inline-block;
+    .cardout {
+        margin-right: 20px !important;
+        margin-bottom: 20px;
+        display: inline-flex !important;
+    }
+    // .cardout:hover {
+    //     transform: unset;
+    // }
+}
+
+// .navBtn {
+//   user-select: none;
+//   display: inline-block;
+//   padding: 8px 16px;
+//   background-color: #4CAF50;
+//   color: white;
+//   border-radius: 50%;
+//   position: relative;
+//   top: 50%;
+//   -ms-transform: translateY(-50%);
+//   transform: translateY(-50%);
+// }
+
+// .navBtn:hover {
+//     background-color: #ddd;
+//     color: black;
+// }
+.viewMore {
+    background-color: #0000FF;
+    padding: 10px 20px;
+}
+
+.nowrap {
+    flex-wrap: nowrap;
+}
+
+.themeSelectDD {
+    width: 180px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--awekn-fg);
+    color: var(--awekn-bg);
+    font-size: 14px;
+}
+
+a {
+    color: var(--awekn-links);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--awekn-hover);
+    text-decoration: none;
+}
+
+@media (min-width: 575.99px) and (max-width: 991.98px) {
+}
+
+@media (max-width: 575.98px) {
+    .aweknSidebar {
+        display: none;
+    }
+    .mobileHeader{ 
+        display: block;
+    }
+    
+    .aweknFocusContainer {
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        width: 100vw;
+        position: relative;
+        left: 0;
+    }
+    .aweknMainContainer { 
+        -webkit-overflow-scrolling: touch;
+    }
+
+    
+    .aweknHeader {
+        height: 0;
+    }
+    .nav-wrapr,.nav-wrapl {
+        display: none;
+    }
+    .wrap {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        .cardout {
+            // margin: auto !important;
+            display: inline-flex !important;
+        }
+        // .cardout:hover {
+        //     transform: unset;
+        // }
+    }
+}

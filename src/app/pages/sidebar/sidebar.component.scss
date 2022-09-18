@@ -1,0 +1,44 @@
+.sidebarContainer {
+    margin: 10px;
+    padding: 20px;
+}
+
+.logoWrapper {
+    h2 {
+        text-align: center;
+    }
+}
+.aweknRef {
+    text-decoration: none;
+    color: var(--awekn-fg);
+}
+
+.mainMenu {
+    margin-top: 40px;
+}
+
+.mainMenuList {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    li {
+        a {
+            color: var(--awekn-fg);
+            text-decoration: none;
+        }
+        .active {
+            background: linear-gradient(45deg, var(--primary-default),var(--primary-dark));
+            padding: 10px 15px;
+            border-radius: 25px;
+            color: var(--awekn-white);
+        }
+        margin: 20px 0px;
+    }
+}
+
+.subMenu {
+    margin-top: 40px;
+    a {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,23 @@
+<div class="settings">
+    <div class="mobileHeader">
+        <h2 class="text-center">Awekn <img src="/assets/logo.png" alt="awekn-logo" width="30px" height="26px" /></h2>
+    </div>
+    <h2 class="text-center">Settings</h2>
+    <div class="content">
+        <form [formGroup]="settingsForm" (ngSubmit)="onSubmit()">
+            <div class="themeSelect">
+                <label>Theme: </label>
+                <select class="themeSelectDD" (change)="changeTheme()" formControlName="themeName">
+                    <option value="" disabled>Choose your Theme</option>
+                    <option *ngFor="let theme of availableThemes" [ngValue]="theme">{{theme}}</option>
+                </select>
+            </div>
+            <div class="saveBtn text-center">
+                <input type="submit" class="aweknSave" value="Save" [disabled]="settingsSaved"> 
+            </div>
+        </form>
+        <div class="saveMessage">
+            <h4 *ngIf="settingsSaved">Settings Saved.</h4>
+        </div>
+    </div>
+</div>
