@@ -38,7 +38,8 @@ A simple Angular app and it would be great to see people extending this further.
 
 ### Awekn FlowChart
 
-```flowchart TD
+```mermaid
+flowchart TD
 
 A[start] --> B[Check for updates]
 B --> C{Updates available ?}
