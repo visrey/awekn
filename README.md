@@ -13,6 +13,8 @@ This app currently has some basic options with support for PWA. It has support f
 
 A simple Angular app and it would be great to see people extending this further.
 
+`Live Demo` : <https://awekn.com>
+
 ----
 
 #### Awekn Road Map
@@ -34,28 +36,29 @@ A simple Angular app and it would be great to see people extending this further.
                 
 ----
 
-###Awekn FlowChart
+### Awekn FlowChart
 
-```flow
-st=>start: User1
-op=>operation: Check for updates
-cond=>condition: Updates available Yes or No?
-uop=>operation: Update PWA
-e=>end: Awekn PWA
+```flowchart TD
 
-st->op->cond
-cond(yes)->uop
-cond(no)->e
-uop->e
+A[start] --> B[Check for updates]
+B --> C{Updates available ?}
+C --> |Yes| D[Update PWA]
+D --> E[end]
+C --> |No| E
 ```
 
 ### Awekn Sequence Diagram
                     
-```seq
-User1->Awekn PWA: Opens Awekn PWA 
-Awekn PWA-->Awekn Live: Check the live version for updates 
+```mermaid
+sequenceDiagram
+participant User
+participant Awekn PWA
+participant Awekn Live
+
+User->>Awekn PWA: Opens Awekn PWA 
+Awekn PWA->>Awekn Live: Check the live version for updates 
 Awekn Live->>Awekn PWA: Recieve and update the cached version_
-Awekn PWA->User1: Show updated version of awekn
+Awekn PWA->>User: Show updated version of awekn
 ```
 
 
